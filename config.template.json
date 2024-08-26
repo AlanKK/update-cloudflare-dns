@@ -1,1 +1,11 @@
-{ "api": "", "update-target": [ { "name": "yourdns.something.com", "id": "", "zone_id": "" } ] }
+{
+    "pushbullet-api-key": "",
+    "cf-api-key": "",
+    "update-target": [
+        {
+            "name": "yourdns.something.com",
+            "id": "dns record id. found in audit log records",
+            "zone-id": ""
+        }
+    ]
+}
