@@ -20,7 +20,7 @@ type IPChangeConfig struct {
 		Name   string `json:"name"`
 		ID     string `json:"id"`
 		ZoneID string `json:"zone-id"`
-	} `json:"update-target"`
+	} `json:"cf-update-target"`
 }
 
 type DNSRecord struct {
@@ -159,7 +159,9 @@ func main() {
 				log.Printf("Error While updating " + target.Name)
 			} else {
 				log.Printf(target.Name + ": successfully updated from " + dnsRecord.Result.Content + " to " + currentIP)
-				sendPushbullet(config.PushApiKey, "EC2 Instance Ready", currentIP)
+				if config.PushApiKey != "" {
+					sendPushbullet(config.PushApiKey, "EC2 Instance Ready", currentIP)
+				}
 			}
 		}
 	}
