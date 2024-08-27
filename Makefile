@@ -6,7 +6,6 @@ all: darwin linux windows
 
 darwin:
 	GOOS=$(GOOS) GOARCH=$(GOARCH) go build -o $(BINARY_NAME).macos main.go pushbullet.go
-	cp $(BINARY_NAME).macos $(BINARY_NAME)
 
 linux:
 	GOOS=linux GOARCH=$(GOARCH) go build -o $(BINARY_NAME).linux main.go pushbullet.go
