@@ -1,1 +1,7 @@
 config.json
+..bfg-report/2024-08-25/20-32-57/cache-stats.txt
+..bfg-report/2024-08-25/20-32-57/deleted-files.txt
+..bfg-report/2024-08-25/20-32-57/object-id-map.old-new.txt
+.DS_Store
+.gitignore
+ip_dns_update

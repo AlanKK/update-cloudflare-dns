@@ -1,1 +1,11 @@
-{ "api": "", "update-target": [ { "name": "yourdns.something.com", "id": "", "zone_id": "" } ] }
+{
+    "pushbullet-api-key": "Leave empty for no notification",
+    "cf-api-key": "Cloudflare API Key",
+    "cf-update-target": [
+        {
+            "name": "hostname.something.com",
+            "id": "dns record id. Only found in audit log records",
+            "zone-id": ""
+        }
+    ]
+}
