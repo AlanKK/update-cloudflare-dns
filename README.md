@@ -1,4 +1,4 @@
-# cloudflare-dyn-dns
+# update-cloudflare-dns
 Update Cloudflare DNS entry with IP address 
 
 ## Usage
