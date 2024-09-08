@@ -1,16 +1,13 @@
 # cloudflare-dyn-dns
-Update Cloudflare DNS entry with IP address when external IP address has changed (different from the DNS entry)
-
-Optionally send a notification with Pushbullet
+Update Cloudflare DNS entry with IP address 
 
 ## Usage
 
 ```
-ip_dns_update -c <path to config file>
+ip_dns_update -c <path to config file> -i <ip address>
 ```
 
-* Create a config file from config.template.json and populate it with Cloudflare data
-* Add a pushbullet API key if you want those notifications
+* Create a config file from config.template.json and populate it with Cloudflare token and data
 
 ## Releases
 Prebuilt binaries can be downloaded from the bin directory in repo for Windows, Linux, and MacOS 

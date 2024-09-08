@@ -1,5 +1,4 @@
 {
-    "pushbullet-api-key": "Leave empty for no notification",
     "cf-api-key": "Cloudflare API Key",
     "cf-update-target": [
         {
